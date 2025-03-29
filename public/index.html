@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Flashcards</title>
+  <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="fc-container">
+        <div id="flashcard-front" class="flashcard current" onclick="flip()">test</div>
+        <div id="flashcard-back" class="flashcard border-hidden" onclick="flipReverse()">translation</div>
+    </div>
+    <button onclick="getNewFlashcard()" class="button">new</button>
+    <form action="/edittranslation" method="post">
+        <div id="translation-container">
+        <label for="translation">Enter translation</label>
+        <input type="number" name="wordid"id="wordid" style="display: none" value="1">
+        <input type="text" name="translation" id="translation">
+        <label for="pass">password</label>
+        <input type="password" name="pass" id="pass">
+        </div>
+        <fieldset>
+            <input type="radio" id="difficulty1" name="difficulty" value="0" class="radio">
+            <label for="difficulty1">Easy</label>
+            <input type="radio" id="difficulty2" name="difficulty" value="1" class="radio">
+            <label for="difficulty2">Medium</label>
+            <input type="radio" id="difficulty3" name="difficulty" value="2" class="radio">
+            <label for="difficulty3">Hard</label>
+        </fieldset>
+        <input type="submit" class="button">
+    </form>
+  <script src="main.js"></script>
+</body>
+</html>

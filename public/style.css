@@ -1,0 +1,68 @@
+formfield{
+    margin-top: 50px;
+    
+}
+
+.fc-container{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-size: 2em;
+    width: 100%;
+    text-align: center;
+}
+
+fieldset{
+    margin-block: 3em;
+    width: 80%;
+    margin-inline: 10%;
+    display: flex;
+    align-items: center;
+}
+
+
+.flashcard{
+    width: 0;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 15px;
+    transition: all 0.2s ease-in;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: nowrap;
+    max-width: 600px;
+}
+
+.button{
+    margin-block: 2em;
+    height: 3rem;
+    font-size: 1.4rem;
+    width: 8rem;
+    margin-left: calc(50% - 4rem);
+    border-radius: 15px;
+}
+
+#translation-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#translation-container input{
+    width: 50%;
+}
+#translation-container label{
+    width: 50%;
+}
+
+.border-hidden{
+    border: 1px transparent;
+}
+
+.current{
+    width: 80%;
+}
