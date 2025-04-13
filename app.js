@@ -241,5 +241,5 @@ app.post("/edittranslation", (req, res) => {
 
 
 
-app.listen(3000,"192.168.2.224" ,() => console.log("listening at port 3000..."))
+app.listen(3000,() => console.log("listening at port 3000..."))
 
